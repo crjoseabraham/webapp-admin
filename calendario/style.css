@@ -1,0 +1,125 @@
+.calendario tr, td, th {
+	border-radius: 0px !important;
+}
+.calendar_simple
+{
+width:400px;
+height:100%;
+text-align:center;
+font-size: 12px;
+}
+
+.calendar_today
+{
+background-color:#FFFFFF;
+font-weight:bolder;
+text-align:center;
+padding:2px;
+}
+
+
+
+td.calendar_link{ 
+text-align:center;
+padding:2px;
+border-bottom: 3px solid #ffc107;
+}
+td.calendar_link:hover{ 
+text-align:center;
+padding:2px;
+border-bottom: 3px solid #ff6f00;
+}
+td.calendar_link a:link,
+td.calendar_link a:visited {
+text-align:center;
+text-decoration:none;
+font-weight:normal;
+display:block;
+padding:2px;
+height: 40px;
+line-height: 36px;
+}
+td.calendar_link a:hover{
+text-decoration:none;
+font-weight:normal;
+display:block;
+padding:2px;
+height: 40px;
+line-height: 36px;
+}
+
+td.calendar_todayLinked{
+border-bottom: 3px solid #ffc107;
+background-color:#E7E7E7;
+padding:2px;
+}
+td.calendar_todayLinked a:link,
+td.calendar_todayLinked a:visited {
+text-decoration:none;
+text-align:center;
+font-weight:bolder;
+display:block;
+padding:2px;
+height: 40px;
+line-height: 36px;
+}
+td.calendar_todayLinked a:hover{
+background-color:#DDDDDD;
+text-decoration:none;
+font-weight:bolder;
+padding:2px;
+height: 40px;
+line-height: 36px;
+}
+
+
+.calendar_weekDays{
+color:#FFFFFF;
+background-color:#ff5722;
+text-align:center;
+padding:2px;
+}
+
+
+td.calendar_heading{ 
+background-color:#ff5722;
+color:#fff;
+font-size: 20px;
+text-align:center;
+padding:2px;
+}
+
+td.calendar_heading a:link,
+td.calendar_heading a:visited {
+background-color:#ff5722;
+color:#FFFFFF;
+text-decoration:none;
+font-size:20px;
+font-weight:normal;
+display:block;
+padding:2px;
+}
+td.calendar_heading a:hover{
+color:#222222;
+background-color:#DDDDDD;
+text-decoration:none;
+font-size:20px;
+font-weight:normal;
+display:block;
+padding:2px;
+}
+
+.mostrarEventos {
+	border: medium none;
+    float: left;
+    font-size: 16px;
+    height: 260px;
+    overflow: auto;
+    width: 100%;
+}
+
+.mostrarEventos hr {
+	border: none;
+	height: 1px;
+	border-top: 8px double #ffc107;
+}

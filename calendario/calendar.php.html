@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css" media="screen">
+	@import "style.css";
+</style>
+</head>
+<body>
+<?php
+
+	include("YourCalendar.php");
+	include("functions.inc.php");
+	mysql_connect('localhost',"root","");
+	mysql_select_db("mbellorin");
+
+	function viewDayEvents($result)
+	{
+		$return="";
+		while ($row=mysql_fetch_array($result))
+		{
+			$return.="<strong>".$row['date']."<strong><br />
+							  ".$row['text']."<hr />";
+		}
+		return $return;
+	}
+
+	$cal=new YourCalendar('eventos','date','date,text','viewDayEvents',false,date('n'),date('Y'));
+	echo "<div style=\"float:left\">";
+	echo $cal->getCalendar();
+	echo "</div>";
+	
+	echo "<div style=\"float:left;margin-left:10px;border:1px solid #000000;padding:5px;\">";
+	echo $cal->getDayEvents();
+	echo "</div>";	
+	
+?>
+</body>
+</html>
