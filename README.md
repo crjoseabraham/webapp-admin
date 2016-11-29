@@ -30,3 +30,8 @@ If you want to access to both interfaces (cashier/admin) you'll need to import t
     user: caja
     
     pass: caja
+
+
+Here you have a little preview:
+
+[logo]: http://imgur.com/j1j1IVx "Admin"
