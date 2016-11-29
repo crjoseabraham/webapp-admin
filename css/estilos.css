@@ -1,0 +1,25 @@
+	@font-face { font-family: Roboto; src: url('../fonts/Roboto-Regular.ttf');}
+    @font-face { font-family: Roboto-M; src: url('../fonts/Roboto-Medium.ttf');}
+    @font-face { font-family: Roboto-B; src: url('../fonts/Roboto-Bold.ttf');}
+
+    body { 
+    	background: url("../img/bg.png") repeat top left;
+    	font-family: Roboto, sans-serif !important;
+    }
+	
+	table th { border-bottom: 1px solid #C3C3C3; }
+
+    fieldset {
+    	border: none !important;
+    }
+
+    legend {
+    	font-family: arial;
+    	font-size: 18px !important;
+    	letter-spacing: -1px;
+    }
+
+    
+
+    
+    
