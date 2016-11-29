@@ -1,0 +1,46 @@
+<!-- 
+FORMULARIO EN VENTANA EMERGENTE
+PARA ELIMINAR UN PROVEEDOR
+
+LLEVA A delete.php DONDE SE
+REGISTRA EN LA BASE DE DATOS
+-->
+<?php
+$get = "SELECT * FROM articulo ORDER BY codigoart ASC";
+$resultado=$mysqli->query($get);
+$option = '';
+while($row=$resultado->fetch_assoc()){
+  $option .= '<option value = "'.$row['codigoart'].'">'.$row['codigoart'].' | '.$row['descripcion'].' | '.$row['precio_venta'].'</option>';
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+<form action="inventario/delete.php" method="post">
+<center><h4>Eliminar articulo</h4></center>
+<hr>
+<div id="ac">
+      <div class="col-md-12 text-center">
+      <div class="form-group">
+                <div class="col-sm-4">
+                  <label class="control-label">Identificación</label>
+                </div>
+                <div class="col-sm-8">
+                  <select class="form-control" name="select_catalog" id="select_catalog">
+                    <?php echo $option; ?>
+                  </select>
+                </div>
+              </div>
+      </div>
+      <br><br>
+      <center>
+        <button type="submit" class="btn btn-success red" id="guardar">Eliminar</button>
+      </center>
+      <br><br>
+</div>
+</form>
+</body>
+</html>
