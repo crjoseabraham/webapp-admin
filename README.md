@@ -33,5 +33,4 @@ If you want to access to both interfaces (cashier/admin) you'll need to import t
 
 
 Here you have a little preview:
-![Alt][logo]
-[logo]: http://i.imgur.com/j1j1IVx.png "Admin"
+![Preview](http://i.imgur.com/WP5CyOa.jpg)
