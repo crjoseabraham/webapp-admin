@@ -1,3 +1,4 @@
+# !! [Update: Jan 2019] This project code is TRASH and I'm planning to make a complete rework
 # Admin web application for small stores
 
 This project consists in a cashier/admin interface for the management of small stores, it's written using PHP, JavaScript, a MySQL database and the MaterializeCSS framework for the styles. It was my first big project, so it's not perfect but hey, one step at a time! ;)
